@@ -1,6 +1,8 @@
 FROM debian:wheezy
 MAINTAINER George Lewis <schvin@schvin.net>
 
+ADD ./sources.list  /etc/apt/sources.list
+
 RUN apt-get update
 RUN apt-get install -y sysstat make
 
